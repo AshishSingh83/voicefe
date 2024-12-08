@@ -37,7 +37,7 @@ export function useLoadingWithRefresh() {
     const fetchData = async () => {
       try {
         const { data } = await axios.get(
-          `${process.env.REACT_APP_API_URL}/api/refresh`,
+          `https://backrepo.vercel.app/api/refresh`,
           {
             withCredentials: true,
           }
